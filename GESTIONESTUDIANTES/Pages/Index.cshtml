@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@using DevExtreme.AspNet.Mvc;
+@(Html.DevExtreme().TextBox().Value("Texto"))
+@(Html.DevExtreme().Button().OnClick("Hola").Width(100).Type(ButtonType.Danger))
+@(Html.DevExtreme().SelectBox())
+
+@section scripts
+
+
+{
+    <script>
+
+        function Hola(){
+            alert("click");
+        }
+
+
+    </script>
+
+
+
+
+
+
+}
+
